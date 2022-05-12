@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2? family= Noto+Sans+TC:wght@100;300;400;500;700;900 & display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.principal{
+    width: 100vw;
+    height: 100vh;
+    background-color: #002A59;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.esquerda{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.esquerda > h1{
+    color: white;
+    font-family:'Noto Sans TC', sans-serif;
+    font-weight: 900;
+    font-size: 2.5em;
+   
+}
+.direita{
+width: 50vh;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.card{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #FDB731;
+    box-shadow: 0px 15px 60px rgba(0, 0, 0, 0.308);
+    border-radius: 10px;
+
+
+}
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #002A59;
+    color: darkgray;
+   outline: none;
+  
+    box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.267);
+}
+.textfield{
+    margin: 10px;
+}
+.textfield > label{
+   
+    margin-bottom: 10px;
+}
+.btn{
+    margin-top: 15px;
+    background-color: transparent;
+    height: 40px;
+    width: 80px;
+    border: 1.5px solid black;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+
+
+
+.btn:hover{
+    background-color: #002A59;
+    color: white;
+}
+span{
+    color: #FDB731;
+}
+@media screen and (max-width:700px){
+
+img{
+    display: none;
+}
+.direita .card{
+   width: 90%;
+   height: auto;
+}
+}
+@media screen and (max-width:600px){
+
+
+   .esquerda h1{
+        font-size: 2em;
+    }
+    .redes{
+        display: none;
+    }
+}
+.redes{
+    margin-top: 30px;
+    display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+  
+    
+}
+.redes p{
+    margin: 0;
+    padding: 0;
+    color: #002A59;
+ 
+}
